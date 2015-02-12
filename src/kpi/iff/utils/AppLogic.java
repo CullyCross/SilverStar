@@ -31,7 +31,7 @@ public class AppLogic {
     private volatile int [] mDuplicates = new int[MATRIX_WIDTH];
     private Random mRandom = new Random();
 
-    public synchronized static int getCurrentConcentration() { return sCurrentConcentration; }
+    //public synchronized static int getCurrentConcentration() { return sCurrentConcentration; }
 
     private static AppLogic mInstance;
 
@@ -55,6 +55,10 @@ public class AppLogic {
         render(g);
     }
 
+    /**
+     * swap two elements
+     */
+
     private void swapElements(int iFrom,
                               int jFrom,
                               int iTo,
@@ -64,6 +68,11 @@ public class AppLogic {
         mMatrix[iTo][jTo] = temp;
     }
 
+    /**
+     * Random swapping elements
+     * @param i array index row
+     * @param j array index column
+     */
     private void swap(int i, int j) {
 
         int chance = mRandom.nextInt(FULL_CHANCE);
@@ -164,5 +173,15 @@ public class AppLogic {
                 );
             }
         }
+
+        g.setColor(Color.WHITE);
+
+        g.setFont(new Font("SanSerif", Font.PLAIN, 20));
+        g.drawString("Silver", 345, 100);
+
+        g.setColor(Color.BLACK);
+        g.drawString("Gold", 55, 275);
+
+
     }
 }

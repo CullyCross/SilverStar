@@ -17,7 +17,7 @@ public class ChartImagePanel extends JPanel {
 
     public ChartImagePanel() {
         setBackground(Color.WHITE);
-        setBorder(BorderFactory.createEmptyBorder(MARGIN, MARGIN, MARGIN, MARGIN));
+        setBorder(BorderFactory.createEmptyBorder(0, MARGIN, MARGIN, MARGIN));
         mAppLogic = AppLogic.getInstance();
     }
 

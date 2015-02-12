@@ -17,7 +17,7 @@ public class DiffusionPanel extends JPanel {
 
     public DiffusionPanel() {
         setBackground(Color.WHITE);
-        setBorder(BorderFactory.createEmptyBorder(MARGIN, MARGIN, MARGIN, MARGIN));
+        setBorder(BorderFactory.createEmptyBorder(MARGIN, MARGIN, 0, MARGIN));
         mAppLogic = AppLogic.getInstance();
     }
 
