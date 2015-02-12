@@ -28,11 +28,20 @@ public class AppLogic {
 
     private int [][] mMatrix = new int[MATRIX_HEIGHT][MATRIX_WIDTH];
     private static int sCurrentConcentration = 0;
+    private volatile int [] mDuplicates = new int[MATRIX_WIDTH];
     private Random mRandom = new Random();
 
     public synchronized static int getCurrentConcentration() { return sCurrentConcentration; }
 
-    public AppLogic() {
+    private static AppLogic mInstance;
+
+    public static AppLogic getInstance() {
+        if (mInstance == null)
+            mInstance = new AppLogic();
+        return mInstance;
+    }
+
+    private AppLogic() {
 
         for(int i = 0; i < MATRIX_HEIGHT; i++) {
             for (int j = 0; j < MATRIX_WIDTH; j++) {
@@ -98,10 +107,16 @@ public class AppLogic {
                 swap(i,j);
             }
         }
-        for(int i = 0; i < MATRIX_HEIGHT; i++) {
-            for(int j = MATRIX_HALF + 1; j < MATRIX_WIDTH; j++) {
-                if(mMatrix[i][j] == GOLD) counter++;
+        for(int i = 0; i < MATRIX_WIDTH; i++) {
+            int c = 0;
+            for(int j = 0; j < MATRIX_HEIGHT; j++) {
+                if(i > MATRIX_HALF + 1 &&
+                        mMatrix[j][i] == GOLD){
+                    counter++;
+                }
+                if(mMatrix[j][i] == GOLD) c++;
             }
+            mDuplicates[i] = c;
         }
         sCurrentConcentration = counter;
     }
@@ -131,5 +146,23 @@ public class AppLogic {
 
         g.setColor(Color.WHITE);
         g.drawString(Integer.toString(sCurrentConcentration), 325, 100);
+    }
+
+    public void renderChart(Graphics g) {
+        for(int i = 0; i < MATRIX_WIDTH; i++) {
+            for(int j = 0; j < MATRIX_HEIGHT; j++) {
+                g.setColor(
+                        j < mDuplicates[i]?
+                                Color.ORANGE:Color.GRAY
+                );
+
+                g.drawRect(
+                        POINT_SIZE*i + MARGIN,
+                        POINT_SIZE*(MATRIX_HEIGHT - j) + MARGIN,
+                        POINT_SIZE,
+                        POINT_SIZE
+                );
+            }
+        }
     }
 }

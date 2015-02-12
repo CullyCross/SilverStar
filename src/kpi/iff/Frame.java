@@ -1,7 +1,8 @@
 package kpi.iff;
 
 import kpi.iff.utils.AppLogic;
-import kpi.iff.utils.Panel;
+import kpi.iff.utils.ChartImagePanel;
+import kpi.iff.utils.DiffusionPanel;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -22,22 +23,26 @@ public class Frame {
 
     //form size
     private final static int FORM_WIDTH = 450;
-    private final static int FORM_HEIGHT = 600;
+    private final static int FORM_HEIGHT = 700;
 
     private final static int MAXIMUM_ITERATIONS = 5000; //set here count of iterations
-    private final static int TIME_BETWEEN_ITERATIONS = 150; //set here delay time(ms)
+    private final static int TIME_BETWEEN_ITERATIONS = 200; //set here delay time(ms)
 
     public static void main(String... args) {
 
         final JFrame frame = new JFrame("For my shining stars!");
-        final Panel panel = new Panel();
+        final DiffusionPanel diffusionPanel = new DiffusionPanel();
+        final ChartImagePanel chartImagePanel = new ChartImagePanel();
+
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.setSize(FORM_WIDTH, FORM_HEIGHT);
         GridLayout layout = new GridLayout(2,1);
         frame.setLayout(layout);
 
-        frame.add(panel);
+        frame.add(diffusionPanel);
+        frame.add(chartImagePanel);
+        /*
         //объект кривой
         final XYSeries series = new XYSeries("data");
         //данные
@@ -48,13 +53,13 @@ public class Frame {
 
 
         ChartPanel chartPanel = new ChartPanel(chart);
-        chartPanel.setBorder(BorderFactory.createEmptyBorder(Panel.MARGIN,
-                Panel.MARGIN,
-                Panel.MARGIN,
-                Panel.MARGIN));
+        chartPanel.setBorder(BorderFactory.createEmptyBorder(DiffusionPanel.MARGIN,
+                DiffusionPanel.MARGIN,
+                DiffusionPanel.MARGIN,
+                DiffusionPanel.MARGIN));
 
 
-        frame.getContentPane().add(new ChartPanel(chart));
+        frame.getContentPane().add(new ChartPanel(chart));*/
 
         frame.setVisible(true);
 
@@ -64,7 +69,7 @@ public class Frame {
 
             @Override
             public void run() {
-                series.add((double)AppLogic.sTime, (double)AppLogic.getCurrentConcentration());
+                //series.add((double)AppLogic.sTime, (double)AppLogic.getCurrentConcentration());
 
                 frame.repaint();
                 if(AppLogic.sTime == MAXIMUM_ITERATIONS) {

@@ -6,7 +6,7 @@ import java.awt.*;
 /**
  * Created by cullycross on 2/10/15.
  */
-public class Panel extends JPanel {
+public class DiffusionPanel extends JPanel {
 
     private final static int PANEL_WIDTH = 400;
     private final static int PANEL_HEIGHT = 300;
@@ -15,10 +15,10 @@ public class Panel extends JPanel {
 
     private final AppLogic mAppLogic;
 
-    public Panel() {
+    public DiffusionPanel() {
         setBackground(Color.WHITE);
         setBorder(BorderFactory.createEmptyBorder(MARGIN, MARGIN, MARGIN, MARGIN));
-        mAppLogic = new AppLogic();
+        mAppLogic = AppLogic.getInstance();
     }
 
     @Override
