@@ -193,13 +193,20 @@ public class AppLogic {
         g.drawString("400", MARGIN + 400, 13 + MARGIN + MATRIX_HEIGHT);
 
         //y Axis
-        g.drawLine(MARGIN, MARGIN + 76, MARGIN + 13, MARGIN + 76);
-        g.drawLine(MARGIN, MARGIN + 151, MARGIN + 13, MARGIN + 151);
-        g.drawLine(MARGIN, MARGIN + 226, MARGIN + 13, MARGIN + 226);
+        g.drawLine(MARGIN, MARGIN + 31, MARGIN + 7, MARGIN + 31);
+        g.drawLine(MARGIN, MARGIN + 61, MARGIN + 13, MARGIN + 61);
+        g.drawLine(MARGIN, MARGIN + 91, MARGIN + 7, MARGIN + 91);
+        g.drawLine(MARGIN, MARGIN + 121, MARGIN + 13, MARGIN + 121);
+        g.drawLine(MARGIN, MARGIN + 151, MARGIN + 7, MARGIN + 151);
+        g.drawLine(MARGIN, MARGIN + 181, MARGIN + 13, MARGIN + 181);
+        g.drawLine(MARGIN, MARGIN + 211, MARGIN + 7, MARGIN + 211);
+        g.drawLine(MARGIN, MARGIN + 241, MARGIN + 13, MARGIN + 241);
+        g.drawLine(MARGIN, MARGIN + 271, MARGIN + 7, MARGIN + 271);
         g.drawLine(MARGIN, MARGIN + 1, MARGIN + 13, MARGIN + 1);
         g.drawString("100%", MARGIN, MARGIN + 14);
-        g.drawString("75%", MARGIN, MARGIN + 89);
-        g.drawString("50%", MARGIN, MARGIN + 164);
-        g.drawString("25%", MARGIN, MARGIN + 239);
+        g.drawString("80%", MARGIN, MARGIN + 74);
+        g.drawString("60%", MARGIN, MARGIN + 134);
+        g.drawString("40%", MARGIN, MARGIN + 194);
+        g.drawString("20%", MARGIN, MARGIN + 254);
     }
 }

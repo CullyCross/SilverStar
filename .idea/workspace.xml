@@ -26,12 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Frame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kpi/iff/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="642" max-vertical-offset="1062">
-              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-              <folding />
+            <state vertical-scroll-proportion="0.25714287" vertical-offset="216" max-vertical-offset="1062">
+              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppLogic.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppLogic.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kpi/iff/utils/AppLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.257143" vertical-offset="3168" max-vertical-offset="3798">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3427" max-vertical-offset="3924">
+              <caret line="203" column="51" selection-start-line="203" selection-start-column="51" selection-end-line="203" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +83,8 @@
         <option value="$PROJECT_DIR$/src/kpi/iff/utils/Panel.java" />
         <option value="$PROJECT_DIR$/src/kpi/iff/utils/ChartImagePanel.java" />
         <option value="$PROJECT_DIR$/src/kpi/iff/utils/DiffusionPanel.java" />
-        <option value="$PROJECT_DIR$/src/kpi/iff/Frame.java" />
         <option value="$PROJECT_DIR$/src/kpi/iff/utils/AppLogic.java" />
+        <option value="$PROJECT_DIR$/src/kpi/iff/Frame.java" />
       </list>
     </option>
   </component>
@@ -459,12 +461,12 @@
       <workItem from="1423669523594" duration="3304000" />
       <workItem from="1423752371519" duration="4439000" />
       <workItem from="1423757328193" duration="510000" />
-      <workItem from="1423823973366" duration="1439000" />
+      <workItem from="1423823973366" duration="2419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31017000" />
+    <option name="totallyTimeSpent" value="31997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="69" y="-4" width="1297" height="772" extended-state="6" />
@@ -530,7 +532,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -568,7 +572,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -606,7 +612,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="894" max-vertical-offset="1530">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -634,7 +642,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="1494">
           <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -662,7 +672,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1566">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -686,18 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kpi/iff/Frame.java">
+    <entry file="file://$PROJECT_DIR$/src/kpi/iff/utils/AppLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="642" max-vertical-offset="1062">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kpi/iff/utils/DiffusionPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3427" max-vertical-offset="3924">
+          <caret line="203" column="51" selection-start-line="203" selection-start-column="51" selection-end-line="203" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -714,10 +718,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kpi/iff/utils/AppLogic.java">
+    <entry file="file://$PROJECT_DIR$/src/kpi/iff/utils/DiffusionPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.257143" vertical-offset="3168" max-vertical-offset="3798">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kpi/iff/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25714287" vertical-offset="216" max-vertical-offset="1062">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

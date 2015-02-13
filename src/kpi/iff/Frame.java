@@ -15,11 +15,11 @@ import java.util.Timer;
 public class Frame {
 
     //form size
-    private final static int FORM_WIDTH = 450;
-    private final static int FORM_HEIGHT = 700;
+    private final static int FORM_WIDTH = 460;
+    private final static int FORM_HEIGHT = 705;
 
-    private final static int MAXIMUM_ITERATIONS = 5000; //set here count of iterations
-    private final static int TIME_BETWEEN_ITERATIONS = 300; //set here delay time(ms)
+    private final static int MAXIMUM_ITERATIONS = 50000; //set here count of iterations
+    private final static int TIME_BETWEEN_ITERATIONS = 250; //set here delay time(ms)
 
     public static void main(String... args) {
 
