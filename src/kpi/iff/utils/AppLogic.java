@@ -1,6 +1,5 @@
 package kpi.iff.utils;
 
-import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
 
@@ -30,8 +29,6 @@ public class AppLogic {
     private static int sCurrentConcentration = 0;
     private volatile int [] mDuplicates = new int[MATRIX_WIDTH];
     private Random mRandom = new Random();
-
-    //public synchronized static int getCurrentConcentration() { return sCurrentConcentration; }
 
     private static AppLogic mInstance;
 
@@ -182,6 +179,27 @@ public class AppLogic {
         g.setColor(Color.BLACK);
         g.drawString("Gold", 55, 275);
 
+        g.setFont(new Font("SanSerif", Font.PLAIN, 12));
 
+        //x Axis
+        g.drawLine(MARGIN + 100, MARGIN + MATRIX_HEIGHT + 1, MARGIN + 100, MARGIN + MATRIX_HEIGHT - 10);
+        g.drawLine(MARGIN + 200, MARGIN + MATRIX_HEIGHT + 1, MARGIN + 200, MARGIN + MATRIX_HEIGHT - 10);
+        g.drawLine(MARGIN + 300, MARGIN + MATRIX_HEIGHT + 1, MARGIN + 300, MARGIN + MATRIX_HEIGHT - 10);
+        g.drawLine(MARGIN + 400, MARGIN + MATRIX_HEIGHT + 1, MARGIN + 400, MARGIN + MATRIX_HEIGHT - 10);
+        g.drawString("0", MARGIN, 13 + MARGIN + MATRIX_HEIGHT);
+        g.drawString("100", MARGIN + 100, 13 + MARGIN + MATRIX_HEIGHT);
+        g.drawString("200", MARGIN + 200, 13 + MARGIN + MATRIX_HEIGHT);
+        g.drawString("300", MARGIN + 300, 13 + MARGIN + MATRIX_HEIGHT);
+        g.drawString("400", MARGIN + 400, 13 + MARGIN + MATRIX_HEIGHT);
+
+        //y Axis
+        g.drawLine(MARGIN, MARGIN + 76, MARGIN + 13, MARGIN + 76);
+        g.drawLine(MARGIN, MARGIN + 151, MARGIN + 13, MARGIN + 151);
+        g.drawLine(MARGIN, MARGIN + 226, MARGIN + 13, MARGIN + 226);
+        g.drawLine(MARGIN, MARGIN + 1, MARGIN + 13, MARGIN + 1);
+        g.drawString("100%", MARGIN, MARGIN + 14);
+        g.drawString("75%", MARGIN, MARGIN + 89);
+        g.drawString("50%", MARGIN, MARGIN + 164);
+        g.drawString("25%", MARGIN, MARGIN + 239);
     }
 }

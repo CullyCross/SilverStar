@@ -3,13 +3,6 @@ package kpi.iff;
 import kpi.iff.utils.AppLogic;
 import kpi.iff.utils.ChartImagePanel;
 import kpi.iff.utils.DiffusionPanel;
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.ChartPanel;
-import org.jfree.chart.JFreeChart;
-import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.data.xy.XYDataset;
-import org.jfree.data.xy.XYSeries;
-import org.jfree.data.xy.XYSeriesCollection;
 
 import javax.swing.*;
 import java.awt.*;
@@ -42,24 +35,6 @@ public class Frame {
 
         frame.add(diffusionPanel);
         frame.add(chartImagePanel);
-        /*
-        //объект кривой
-        final XYSeries series = new XYSeries("data");
-        //данные
-        final XYDataset dataset = new XYSeriesCollection(series);
-
-        JFreeChart chart = ChartFactory.createXYLineChart("Chart",
-                "Iterations", "Concentration", dataset, PlotOrientation.VERTICAL, false, true, false);
-
-
-        ChartPanel chartPanel = new ChartPanel(chart);
-        chartPanel.setBorder(BorderFactory.createEmptyBorder(DiffusionPanel.MARGIN,
-                DiffusionPanel.MARGIN,
-                DiffusionPanel.MARGIN,
-                DiffusionPanel.MARGIN));
-
-
-        frame.getContentPane().add(new ChartPanel(chart));*/
 
         frame.setVisible(true);
 
@@ -69,8 +44,6 @@ public class Frame {
 
             @Override
             public void run() {
-                //series.add((double)AppLogic.sTime, (double)AppLogic.getCurrentConcentration());
-
                 frame.repaint();
                 if(AppLogic.sTime == MAXIMUM_ITERATIONS) {
                     timer.cancel();
